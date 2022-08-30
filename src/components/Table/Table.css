@@ -1,0 +1,55 @@
+.table-container__title {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.table {
+    margin: 0 auto;
+    margin-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+td {
+    border: 3px solid #81b29a;
+    width: 150px;
+    height: 150px;
+    font-size: 130px;
+}
+
+td:first-child,
+td:nth-child(2),
+td:nth-child(3) {
+    border-top: none;
+    border-left: none;
+}
+
+td:nth-child(3) {
+    border-right: none;
+}
+
+tr.third-row > td:nth-child(1),
+tr.third-row > td:nth-child(2),
+tr.third-row > td:nth-child(3) {
+    border-bottom: none;
+}
+
+.table__winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.table__winning-message.show {
+    display: flex;
+}
